@@ -63,6 +63,7 @@ const Puzzle = () => {
     setTileOrder([1, 2, 3, 4, 5, 6, 7, 8, 0]);
   };
 
+  // Randomize the tiles when application is first ran.
   useEffect(() => {
     randomizeOrder();
   }, []);
@@ -77,7 +78,7 @@ const Puzzle = () => {
 
   return (
     <div className="puzzle-container">
-      {solved ? <p className="solved-message">You solved it!</p> : null}
+      {solved ? <h2 className="solved-message">You solved it!</h2> : null}
       <div className="grid-container">{renderTiles()}</div>
       <div className="button-container">
         <button onClick={randomizeOrder}>Randomize</button>
