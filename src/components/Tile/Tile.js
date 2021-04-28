@@ -10,6 +10,7 @@ const Tile = (props) => {
       </button>
     );
   } else {
+    // If the number is equal to 0, show an empty tile.
     return <button className="tile-hidden"></button>;
   }
 };

@@ -28,6 +28,8 @@ const Puzzle = () => {
   };
 
   const handleClick = (number) => {
+    // If the empty tile is 1 index or 3 indices away from the clicked tile,
+    // swap the positions of the clicked tile and empty tile.
     let i = tileOrder.findIndex((tile) => tile === number);
     if (i !== -1) {
       if (tileOrder[i - 1] === 0) {
