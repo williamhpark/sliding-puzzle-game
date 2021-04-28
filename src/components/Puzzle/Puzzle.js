@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 import "./Puzzle.css";
 import Tile from "../Tile/Tile";
 
+const SOLVED_ARRAY = [1, 2, 3, 4, 5, 6, 7, 8, 0];
+
 const Puzzle = () => {
   const [tileOrder, setTileOrder] = useState([]);
   const [solved, setSolved] = useState(false);
@@ -51,8 +53,8 @@ const Puzzle = () => {
   };
 
   const checkSolved = () => {
-    for (let i = 0; i < tileOrder.length - 1; ++i) {
-      if (tileOrder[i] !== i + 1) {
+    for (let i = 0; i < tileOrder.length; ++i) {
+      if (tileOrder[i] !== SOLVED_ARRAY[i]) {
         return false;
       }
     }
@@ -60,10 +62,10 @@ const Puzzle = () => {
   };
 
   const solvePuzzle = () => {
-    setTileOrder([1, 2, 3, 4, 5, 6, 7, 8, 0]);
+    setTileOrder(SOLVED_ARRAY);
   };
 
-  // Randomize the tiles when application is first ran.
+  // Randomize the tiles when application is first run.
   useEffect(() => {
     randomizeOrder();
   }, []);

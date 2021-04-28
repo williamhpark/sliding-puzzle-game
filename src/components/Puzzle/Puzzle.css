@@ -9,8 +9,8 @@
   grid-gap: 2px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   outline: 1px solid grey;
 }
 
