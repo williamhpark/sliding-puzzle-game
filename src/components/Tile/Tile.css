@@ -1,0 +1,16 @@
+.tile,
+.tile-hidden {
+  width: 100%;
+  height: 100%;
+  border: none;
+  transition: all 1s ease;
+}
+
+.tile {
+  background-color: #ffcccb;
+  cursor: pointer;
+}
+
+.tile-hidden {
+  background-color: #ffffff;
+}
