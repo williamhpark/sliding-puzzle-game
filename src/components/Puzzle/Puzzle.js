@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import "./Puzzle.css";
 import Tile from "../Tile/Tile";
 
+// The array corresponding to a solved puzzle.
 const SOLVED_ARRAY = [1, 2, 3, 4, 5, 6, 7, 8, 0];
 
 const Puzzle = () => {
