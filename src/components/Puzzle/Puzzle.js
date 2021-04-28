@@ -12,7 +12,7 @@ const Puzzle = () => {
 
   // Tile order shuffled in-place using the Fisher-Yates shuffle algorithm.
   const randomizeOrder = () => {
-    let array = [0, 1, 2, 3, 4, 5, 6, 7, 8];
+    let array = [...SOLVED_ARRAY];
     for (let i = array.length - 1; i > 0; i--) {
       let j = Math.floor(Math.random() * (i + 1));
       let temp = array[i];
