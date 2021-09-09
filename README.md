@@ -1,4 +1,4 @@
-# Sliding Puzzle Game
+# 🧩 Sliding Puzzle Game
 
 This is my submission for the Grapevine Week 0 Pulsecheck Software Developer Technical Assessment. I used the React JS library, with React Hooks, to create the application.
 
